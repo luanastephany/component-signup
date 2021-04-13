@@ -5,13 +5,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <title>Intro component with sign up form</title>
 </head>
 
 <body>
+  <div id="root">
 
+
+    <div class="content">
+
+      <!-- Descrição da esquerda -->
+      <div class="description">
+        <h1>Learn to code by <br />watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+          understanding how developers think is invaluable.</p>
+      </div>
+
+      <!-- Parte da direita -->
+      <div class="register">
+
+        <!--Botão de cima -->
+        <button class="price">
+          Try it free 7 days then $20/mo, thereafter
+        </button>
+
+        <!-- Inputs -->
+        <div class="card">
+          <div class="input-container error">
+            <div class="input">
+              <input type="text" name="" placeholder="First Name">
+              <img src="images/icon-error.svg" alt="">
+            </div>
+            <p>First name cannot be empty</p>
+          </div>
+
+          <div class="input-container error">
+            <div class="input">
+              <input type="text" name="" placeholder="Last Name">
+              <img src="images/icon-error.svg" alt="">
+            </div>
+            <p>Last name cannot be empty</p>
+          </div>
+
+          <div class="input-container error">
+            <div class="input">
+              <input type="email" name="" placeholder="Email Address">
+              <img src="images/icon-error.svg" alt="">
+            </div>
+            <p>Looks like this is not an email</p>
+          </div>
+
+          <div class="input-container error">
+            <div class="input">
+              <input type="text" name="" placeholder="Password">
+              <img src="images/icon-error.svg" alt="">
+            </div>
+            <p>Password cannot be empty</p>
+          </div>
+
+          <!-- Botão de baixo -->
+          <button class="trial">
+            Claim Your free trial
+          </button>
+
+          <p id="terms">By clicking the button, you are agreeing to our <a>Terms and Servies</a></p>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+  </div>
 
   <footer>
 
