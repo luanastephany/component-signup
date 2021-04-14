@@ -34,18 +34,18 @@
         </button>
 
         <!-- Inputs -->
-        <div class="card">
-          <div class="input-container error">
+        <form id="form" class="card">
+          <div id="firstname" class="input-container">
             <div class="input">
-              <input type="text" name="" placeholder="First Name">
+              <input type="text" name="firstname" placeholder="First Name">
               <img src="images/icon-error.svg" alt="">
             </div>
             <p>First name cannot be empty</p>
           </div>
 
-          <div class="input-container error">
+          <div id="lastname" class="input-container">
             <div class="input">
-              <input type="text" name="" placeholder="Last Name">
+              <input type="text" name="lastname" placeholder="Last Name">
               <img src="images/icon-error.svg" alt="">
             </div>
             <p>Last name cannot be empty</p>
@@ -53,7 +53,7 @@
 
           <div class="input-container error">
             <div class="input">
-              <input type="email" name="" placeholder="Email Address">
+              <input type="email" name="email" placeholder="Email Address">
               <img src="images/icon-error.svg" alt="">
             </div>
             <p>Looks like this is not an email</p>
@@ -61,19 +61,19 @@
 
           <div class="input-container error">
             <div class="input">
-              <input type="text" name="" placeholder="Password">
+              <input type="text" name="password" placeholder="Password">
               <img src="images/icon-error.svg" alt="">
             </div>
             <p>Password cannot be empty</p>
           </div>
 
           <!-- Botão de baixo -->
-          <button class="trial">
+          <button class="trial" type="submit">
             Claim Your free trial
           </button>
 
           <p id="terms">By clicking the button, you are agreeing to our <a>Terms and Servies</a></p>
-        </div>
+        </form>
 
 
 
@@ -102,6 +102,7 @@
   <footer>
 
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
