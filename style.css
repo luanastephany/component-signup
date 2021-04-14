@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: 'Poppins', 'sans serif';
 }
 
 #root {
@@ -16,7 +17,6 @@
 
 body {
     background-image: url(images/pattern.png);
-    font-family: 'Poppins', 'sans serif';
     background-color: rgb(102, 10, 10);
 }
 
@@ -42,13 +42,11 @@ body {
 /* Título */
 .content .description h1 {
     font-size: 36px;
-    font-family: 'Poppins', 'sans serif';
     margin-bottom: 25px;
 }
 
 /* Descrição */
 .content .description p {
-    font-family: 'Poppins', 'sans serif';
 }
 
 /*------------------------------------*/
@@ -69,7 +67,6 @@ body {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-family: 'Poppins', 'sans serif';
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -100,6 +97,7 @@ body {
 }
 
 .input-container p {
+    display: none;
     align-self: flex-end;
     color: var(--error);
     opacity: 0.7;
@@ -109,20 +107,33 @@ body {
     font-style: italic;
 }
 
-/*Borda vermelha quando dá erro */
-.input-container.error .input {
-    border-color: var(--error);
-}
-
 /*Caixa do input em si */
 .input-container .input input {
     flex: 1;
     border: none;
+    font-weight: 600;
 }
 
 .input-container .input img {
     width: 24px;
     height: 24px;
+    display: none;
+}
+
+/*Borda vermelha quando dá ERRO */
+.input-container.error .input {
+    border-color: var(--error);
+}
+
+/* Cor vermelha quando tiver com ERRO */
+.input-container.error .input input {
+    color: var(--error);
+}
+
+/* Ícone e mensagem de erro */
+.input-container.error .input img,
+.input-container.error p {
+    display: block;
 }
 
 
@@ -136,7 +147,6 @@ body {
     border-radius: 30px;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: 'Poppins', 'sans serif';
     font-weight: 500;
     margin-top: 20px;
 }
